@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 03</title>
+  <link rel="stylesheet" href="../Style/CSS.css">
+
+  <style>
+    body{
+      overflow: hidden;
+    }
+    body>section {
+      width: 50vw;
+      height: 50vh;
+      position: absolute;
+    }
+
+    body>section:first-child {
+      background: red;
+    }
+    body>section:nth-child(2) {
+      background: green;
+      right: 0;
+    }
+    body>section:nth-child(3) {
+      background: gold;
+      bottom: 0;
+    }
+    body>section:nth-child(4) {
+      background: hotpink;
+      right: 0;
+      bottom: 0;
+    }
+
+    body>section>div {
+      background: white;
+      width: 15vw;
+      height: 15vw;
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    body>section>div>div {
+      background: red;
+      width: 5vw;
+      height: 5vw;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .corner {
+      background: white;
+      width: 10vw;
+      height: 10vw;
+      position: absolute;
+    }
+    #corner1 {
+      border-bottom-right-radius: 100%;
+    }
+    #corner2 {
+      right: 0;
+      border-bottom-left-radius: 100%;
+
+    }
+    #corner3 {
+      top: -5vw;
+      right: 0;
+      left: 0;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%;
+      margin: auto;
+    }
+    #corner4 {
+      bottom: 0;
+      border-top-right-radius: 100%;
+    }
+    #corner5 {
+      bottom: 0;
+      right: 0;
+      border-top-left-radius: 100%;
+    }
+    #corner6 {
+      bottom: -5vw;
+      right: 0;
+      left: 0;
+      border-top-left-radius: 100%;
+      border-top-right-radius: 100%;
+      margin: auto;
+    }
+  </style>
+
+
+</head>
+<body>
+<section>
+  <div>
+    <div></div>
+  </div>
+</section>
+<section>
+  <div>
+    <div></div>
+  </div>
+</section>
+<section>
+  <div>
+    <div></div>
+  </div>
+</section>
+<section>
+  <div>
+    <div></div>
+  </div>
+</section>
+
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="corner"></div>
+<div id="corner6" class="corner"></div>
+</body>
+</html>
